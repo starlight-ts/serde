@@ -3,7 +3,17 @@ name = "starlight-serde"
 version = "0.1.0"
 authors = ["Gryffon Bellish <owenbellish@gmail.com>"]
 edition = "2018"
+license = "MIT"
+description = "Serde for use with starlight-utils"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+error-chain = "0.12"
+neon = "0.4.0"
+neon-runtime = "0.4.0"
+num = { version = "0.3.0", default-features = false }
+serde = "1.0.114"
+
+[dev-dependencies]
+serde_derive = "1.0.114"
